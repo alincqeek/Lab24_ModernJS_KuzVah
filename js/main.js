@@ -109,18 +109,36 @@
 // console.log("Остальные числа:", rest);
 
 
-const mas1 = [1, 2, 3];
-const mas2 = [4, 5, 6];
-const mas3 = [...mas1, ...mas2]
-function findMax(...rest) {
-    return rest.reduce((max, num) => rest.reduce((max, num) => {
-        return num > max ? num : max;
-    }, 0));
-}
-console.log(mas3)
-console.log(findMax(4,6,8,2))
+// const mas1 = [1, 2, 3];
+// const mas2 = [4, 5, 6];
+// const mas3 = [...mas1, ...mas2]
+// function findMax(...rest) {
+//     return rest.reduce((max, num) => rest.reduce((max, num) => {
+//         return num > max ? num : max;
+//     }, 0));
+// }
+// console.log(mas3)
+// console.log(findMax(4,6,8,2))
 
-const obj1 = { name: "Иван", age: 30 };
-const obj2 = { city: "Москва", occupation: "Developer" };
-const mergedObj = { ...obj1, ...obj2 };
-console.log( mergedObj);
+// const obj1 = { name: "Иван", age: 30 };
+// const obj2 = { city: "Москва", occupation: "Developer" };
+// const mergedObj = { ...obj1, ...obj2 };
+// console.log( mergedObj);
+
+// import {greet,add,PI} from "./utils.js"
+// console.log("Модули");
+// console.log(greet("Алексей"));
+// console.log("5+3=",add(5,3));
+// console.log("Значение PI",PI );
+
+// import {multiply as умножить} from "./utils.js";
+// console.log("4*7=",умножить(4,7));
+
+// import * as Utils from "./utils.js";
+// console.log(Utils.greet("Мария"));
+// console.log("Умножение: ",Utils.multiply(3 ,9));
+
+import * as Utils from "./math.js";
+console.log("4√7=",Utils.square(4,2));
+console.log("4**7=",Utils.cube(4,2));
+console.log("Значение E=",Utils.E );
