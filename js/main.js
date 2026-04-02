@@ -209,3 +209,31 @@
 //     .then((result2)=>step3(result2))
 //     .then((finalResult)=>consol.log("Финальный результат:", finalResult))
 //     .catch((error)=>console.log("Ошибка",error))
+
+
+// function checkInventory(product) {
+//     return new Promise((resolve, reject) => {
+
+//         const inventory = {
+//             'laptop': 5,
+//             'phone': 0,
+//             'tablet': 3,
+//             'headphones': 0
+//         };
+//         setTimeout(() => {
+//             if (product in inventory){
+//                 resolve (`Товар "${product}" есть в наличии`)
+//             }
+//             else{reject("Товар не найден")}
+//         }, 1500);
+//     })
+// }
+
+//  checkInventory(`phone`)
+//         .then((product) => console.log(product)) 
+//         .catch((noproduct) => console.log(noproduct)) 
+        
+// checkInventory(`phone1`)
+//         .then((product) => console.log(product)) 
+//         .catch((noproduct) => console.log(noproduct)) 
+        
